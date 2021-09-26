@@ -1,9 +1,14 @@
-.hg-conteudo {
-    background-color: silver;
-}
+@import url('https://fonts.googleapis.com/css2? family = Scheherazade + New & display = swap');
+@import url('https://fonts.googleapis.com/css2? family = Gluten: wght @ 300 & family = Scheherazade + Novo & display = swap');
 
-.hg-conteudo > main {
-    background-color: #aaa;
+*{
+    font-family: 'Scheherazade', sans-serif;
+}
+.conteudo {
+    background-color: rgb(235, 185, 121);
+    flex: 1;
+    display: flex;
+    flex-flow: column;
 }
 
 body {
@@ -14,27 +19,84 @@ body {
     flex-flow: column;
 }
 
-.hg-conteudo {
+.conteudo {
     flex: 1;
     display: flex;
     flex-flow: column;
 }
 
-.hg-conteudo > nav {
+.conteudo > nav {
     order: -1;
+    background-color: rgb(248, 216, 174);
+    margin: 0 auto;
+    flex: 1;
+    overflow: hidden;
 }
 
-.hg-conteudo > main {
+.conteudo > main {
     flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
-    .hg-conteudo {
+    .conteudo {
         flex-flow: row;
     }
 
-    .hg-conteudo > aside,
-    .hg-conteudo > nav {
+    .conteudo > aside,
+    .conteudo > nav {
         flex: 0 0 200px;
     }
+}
+.header{
+    text-align: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+}
+
+p{
+    text-align: left;
+    margin: 6px 5px 6px 5px;
+}
+.conteudo > main > img{
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    width: 900px;
+    height: 400px;
+    margin:auto;
+}
+.conteudo > nav {
+    margin: 0 auto;
+}
+.conteudo > main > h1{
+    text-align: center;
+}
+#menu{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-family: 'Gluten', serif;
+}
+.conteudo > aside{
+    background-color: rgb(248, 216, 174);
+}
+#conteudo2 > p{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    font-family: 'Gluten', serif;
+}
+div > nav a{
+    color: black;
+    margin: 0 3px 5px 0;
+    background-color: rgb(247, 207, 155);
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    padding: 4px;
 }
